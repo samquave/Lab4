@@ -18,20 +18,20 @@ document.addEventListener('DOMContentLoaded', function() {
         var random = color[Math.floor(Math.random()*color.length)];
         div.style.backgroundColor = random;
 
-    div.addEventListener('mouseover', function() {
+    div.addEventListener('mouseenter', function() {
         var idtext = document.createTextNode(id);
         var idpara = document.createElement('p');
         idpara.appendChild(idtext);
         div.appendChild(idpara);
-    div.addEventListener('mouseout', function() {
-        div.removeChild(idpara);
+    div.addEventListener('mouseleave', function() {
+            div.removeChild(idpara);
     })
+    })
+    })
+    })
+    })
+   
 
-    })
-     })
-    })
-
-    })
 
 
         
