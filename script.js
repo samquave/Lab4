@@ -20,8 +20,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
     div.addEventListener('mouseenter', function() {
        this.innerText = id;
-     div.addEventListener('mouseleave', function() {
+    div.addEventListener('mouseleave', function() {
            this.innerText = "";
+    div.addEventListener('dblclick', function() {
+        var id = this.id;
+        if(id % 2 === 0) {
+            if (this.nextSibling) {
+                this.nextSibling.remove();
+            } else {
+                alert("There's nothing to the right to remove.");
+            }
+        } else{
+            if (this.previousSibling) {
+                this.previousSibling.remove();
+            } else {
+                alert("There are no elements to the left to remove.");
+            }
+        }
+    })
      })
     })
     })
