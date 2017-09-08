@@ -6,10 +6,13 @@
 
 
 .square {
-    
+    text-align: center;
     width: 100px;
     height: 100px;
     float: left;
+    line-height: 100px;
+    vertical-align: middle;
+    font-size: 50px;
 
 }
 

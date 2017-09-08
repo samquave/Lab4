@@ -19,17 +19,14 @@ document.addEventListener('DOMContentLoaded', function() {
         div.style.backgroundColor = random;
 
     div.addEventListener('mouseenter', function() {
-        var idtext = document.createTextNode(id);
-        var idpara = document.createElement('p');
-        idpara.appendChild(idtext);
-        div.appendChild(idpara);
-    div.addEventListener('mouseleave', function() {
-            div.removeChild(idpara);
+       this.innerText = id;
+     div.addEventListener('mouseleave', function() {
+           this.innerText = "";
+     })
     })
     })
     })
-    })
-    })
+})
    
 
 
